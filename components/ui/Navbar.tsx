@@ -9,7 +9,7 @@ export const Navbar = () => {
         <Toolbar>
             <NextLink href='/' passHref>
                 <Link display='flex' alignItems='center'>
-                    <Typography variant='h6'>Myshoper |</Typography>
+                    <Typography variant='h6'>Deportivo Pereira |</Typography>
                     <Typography sx={{ ml: 0.5 }}>Tienda Matecaña</Typography>
                 </Link>  
             </NextLink>

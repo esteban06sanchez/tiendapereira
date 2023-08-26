@@ -8,7 +8,7 @@ interface SeedProduct {
     etiquetas: string[];
     titulo: string;
     tipo: ValidTypes;
-    genero: 'men'|'women'|'kid'|'unisex'
+    genero: 'men'|'women'|'kid'
 }
 
 type ValidSizes = 'XS'|'S'|'M'|'L'|'XL'|'XXL'|'XXXL';

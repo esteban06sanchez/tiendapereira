@@ -34,7 +34,7 @@ export const ProductCard: FC<Props> = ({ product }) => {
                             component='img'
                             className='fadeIn'
                             image={ productImage }
-                            alt={ product.title }
+                            alt={ product.titulo }
                         />
 
                     </CardActionArea>

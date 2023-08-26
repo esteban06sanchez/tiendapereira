@@ -1,4 +1,5 @@
 export interface IProduct {
+    titulo: string | undefined;
     _id: string;
     description: string;
     images: string[];

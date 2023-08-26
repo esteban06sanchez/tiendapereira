@@ -32,10 +32,9 @@ const SummaryPage = () => {
 
                         
                         <Typography>Yury Montoya</Typography>
-                        <Typography>323 Algun lugar</Typography>
-                        <Typography>Stittsville, HYA 23S</Typography>
-                        <Typography>Canadá</Typography>
-                        <Typography>+1 23123123</Typography>
+                        <Typography>323 Colombia</Typography>
+                        <Typography>Medellin, Colombia</Typography>
+                        <Typography>+57 3113300654</Typography>
 
                         <Divider sx={{ my:1 }} />
 

@@ -38,19 +38,19 @@ export const CartList: FC<Props> = ({ editable = false }) => {
                     </Grid>
                     <Grid item xs={7}>
                         <Box display='flex' flexDirection='column'>
-                            <Typography variant='body1'>{ product.title }</Typography>
+                            <Typography variant='body1'>{ product.titulo }</Typography>
                             <Typography variant='body1'>Talla: <strong>M</strong></Typography>
 
                             {
                                 editable 
                                 ? <ItemCounter />
-                                : <Typography variant='h5'>3 items</Typography>
+                                : <Typography variant='h5'>5 items</Typography>
                             }
                             
                         </Box>
                     </Grid>
                     <Grid item xs={2} display='flex' alignItems='center' flexDirection='column'>
-                        <Typography variant='subtitle1'>{ `$${ product.price }` }</Typography>
+                        <Typography variant='subtitle1'>{ `$${ product.precio }` }</Typography>
                         
                         {
                             editable && (

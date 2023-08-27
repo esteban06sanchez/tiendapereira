@@ -1,12 +1,12 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import { AuthLayout } from '../../components/layouts'
+import { AuthLayout } from '../layouts'
 
-describe('auth', () => {
+describe('AuthComponent', () => {
   it('renders login form', () => {
     render(<AuthLayout />);
     
-    const emailInput = screen.getByPlaceholderText('Email');
+    const emailInput = screen.getByPlaceholderText('correo');
     const passwordInput = screen.getByPlaceholderText('Password');
     const loginButton = screen.getByText('Login');
     
@@ -18,12 +18,14 @@ describe('auth', () => {
   it('performs login', () => {
     render(<AuthLayout />);
     
-    const emailInput = screen.getByPlaceholderText('Email');
+    const emailInput = screen.getByPlaceholderText('correo');
     const passwordInput = screen.getByPlaceholderText('Password');
-    const loginButton = screen.getByText('Login');
+    const loginButton = screen.getByText('register');
 
     fireEvent.change(emailInput, { target: { value: 'test@example.com' } });
     fireEvent.change(passwordInput, { target: { value: 'password123' } });
     fireEvent.click(loginButton);
+
+    // You can add assertions here to check for successful login behavior
   });
 });
